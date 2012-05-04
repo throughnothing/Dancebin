@@ -1,0 +1,7 @@
+*~
+*.swp
+blib
+Makefile
+Makefile.old
+.build
+Dustbin-*
