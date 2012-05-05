@@ -1,0 +1,9 @@
+<h1>[% post.title %]</h1>
+<div>[% post.ts %] (<a href='/[% post.id %]/raw'>raw</a>)</div>
+<div class="syntax">
+    [% IF post.html %]
+        [% post.html %]
+    [% ELSE %]
+        <pre>[% post.code %]</pre>
+    [% END %]
+</div>

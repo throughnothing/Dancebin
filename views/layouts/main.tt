@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="brand" href="/">Dancebin</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            [% content %]
+        </div>
+    </body>
+</html>

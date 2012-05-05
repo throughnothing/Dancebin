@@ -1,0 +1,11 @@
+<center>
+    <form action="/" method="POST">
+            <input type="text" class="span8" name="title"
+                placeholder="Title (optional)">
+            <div>
+                <textarea name="code" class="input-xlarge span8"
+                    rows="24" placeholder="Put code here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-large">Dust</button>
+    </form>
+</center>

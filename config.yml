@@ -1,0 +1,24 @@
+appname: "Dancebin"
+layout: "main"
+charset: "UTF-8"
+
+logger: "console"
+log: "debug"
+
+template: "template_toolkit"
+engines:
+  template_toolkit:
+    encoding:  'utf8'
+    start_tag: '[%'
+    end_tag:   '%]'
+
+
+plugins:
+  DBIC:
+    default:
+      dsn: dbi:SQLite:dbname=data/dancebin.db
+      options:
+        sqlite_unicode: 1
+
+# Comment out for production
+show_errors: 1
