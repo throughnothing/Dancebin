@@ -5,6 +5,8 @@ use Dancer;
 use Dancer::Plugin::DBIC qw( schema );
 use DateTime;
 use Dancebin::Pygments qw( highlight );
+use Data::UUID;
+
 
 # ABSTRACT: Simple. Pastebin.
 
@@ -14,10 +16,12 @@ post '/' => sub {
     my $p = params;
     return send_error("No Code!", 400) unless $p->{code};
 
+    ( my $id = Data::UUID->new->create_b64 ) =~ s/==//g;
     return redirect '/' . schema->resultset('Post')->create({
+        id    => $id,
         title => $p->{title},
-        code => $p->{code},
-        html => highlight(
+        code  => $p->{code},
+        html  => highlight(
             code  => $p->{code},
             lang  => $p->{lang},
             title => $p->{title}
@@ -29,7 +33,7 @@ post '/' => sub {
 any '/**' => sub {
     my ( $tokens ) = splat;
     my $id = $tokens->[0];
-    return redirect '/' unless $id and $id ~~ /^\d+$/;
+    return redirect '/' unless $id;
 
     my $post = schema->resultset('Post')->find( $id );
     return redirect '/' unless $post;

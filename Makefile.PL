@@ -30,6 +30,7 @@ my %WriteMakefileArgs = (
     "DBIx::Class::Schema" => 0,
     "Dancer" => 0,
     "Dancer::Plugin::DBIC" => 0,
+    "Data::UUID" => 0,
     "DateTime" => 0,
     "Exporter" => 0,
     "IPC::Run" => 0,

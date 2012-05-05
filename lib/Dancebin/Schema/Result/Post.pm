@@ -21,8 +21,7 @@ __PACKAGE__->table("posts");
 
 =head2 id
 
-  data_type: 'integer'
-  is_auto_increment: 1
+  data_type: 'text'
   is_nullable: 0
 
 =head2 ts
@@ -55,7 +54,7 @@ __PACKAGE__->table("posts");
 
 __PACKAGE__->add_columns(
   "id",
-  { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
+  { data_type => "text", is_nullable => 0 },
   "ts",
   {
     data_type     => "timestamp",
@@ -74,8 +73,8 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07010 @ 2012-05-04 22:58:14
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:f5XIMsVNNwhDKkbTZuRXlw
+# Created by DBIx::Class::Schema::Loader v0.07010 @ 2012-05-05 00:20:21
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:cZZ573oK06yO4N6qXgm92g
 
 # ABSTRACT: DBIx::Class Representation of posts table
 

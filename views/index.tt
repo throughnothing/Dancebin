@@ -6,6 +6,6 @@
                 <textarea name="code" class="input-xlarge span8"
                     rows="24" placeholder="Put code here..."></textarea>
             </div>
-            <button type="submit" class="btn btn-large">Dust</button>
+            <button type="submit" class="btn btn-large">Dance!</button>
     </form>
 </center>

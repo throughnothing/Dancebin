@@ -1,5 +1,5 @@
 CREATE TABLE posts  (
-    id INTEGER PRIMARY KEY ASC,
+    id TEXT PRIMARY KEY,
     ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP, /* Created timestamp */
     language TEXT,                          /* Language (if detected) */
     title TEXT,                             /* Title/Filename */
