@@ -35,7 +35,10 @@ any '/**' => sub {
     my $id = $tokens->[0];
     return redirect '/' unless $id;
 
-    my $post = schema->resultset('Post')->find( $id );
+    my $post = schema->resultset('Post')->search({
+        id => $id,
+        ts => { '>=' => DateTime->now->subtract( weeks => 1 ) },
+    })->single;
     return redirect '/' unless $post;
 
     var post => $post;
