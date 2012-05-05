@@ -2,9 +2,10 @@ body { padding-top: 60px; }
 
 table.highlighttable { width: 100%; }
 table td.linenos { width: 50px; text-align: right; }
-div.code { width: 100%; }
+div.syntax { margin: 10px 0 0; }
 
-.syntax pre { background: #f8f8f8 !important; }
+.syntax td.code pre { width: 880px !important; }
+.syntax pre { overflow-x: auto; word-wrap: normal; white-space: pre; background: #f8f8f8 !important; margin: 0;}
 /* Pygments Styles */
 /* generated from: pygmentize -f html -S default -a .syntax */
 .syntax .hll { background-color: #ffffcc }
