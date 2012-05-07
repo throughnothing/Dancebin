@@ -16,7 +16,7 @@ post '/' => sub {
     my $p = params;
     return send_error("No Code!", 400) unless $p->{code};
 
-    ( my $id = Data::UUID->new->create_b64 ) =~ s/==//g;
+    ( my $id = Data::UUID->new->create_b64 ) =~ s/\W//g;
     return redirect '/' . schema->resultset('Post')->create({
         id    => $id,
         title => $p->{title},
