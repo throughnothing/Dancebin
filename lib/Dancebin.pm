@@ -7,8 +7,10 @@ use DateTime;
 use Dancebin::Pygments qw( highlight );
 use Data::UUID;
 
-
 # ABSTRACT: Simple. Pastebin.
+
+# Create the db if this is the first time app is ever run.
+eval { schema->deploy };
 
 get '/' => sub { template 'index.tt' };
 
@@ -17,6 +19,7 @@ post '/' => sub {
     return send_error("No Code!", 400) unless $p->{code};
 
     ( my $id = Data::UUID->new->create_b64 ) =~ s/\W//g;
+
     return redirect '/' . schema->resultset('Post')->create({
         id    => $id,
         title => $p->{title},

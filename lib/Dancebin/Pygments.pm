@@ -14,7 +14,10 @@ sub highlight {
     my ( %args ) = @_;
     return unless $args{code};
 
-    my @cmd = ( $pygment, qw( -f html -O linenos=1 ) );
+    my @cmd = (
+        $pygment,
+        qw( -f html -O linenos=1 -O anchorlinenos -O lineanchors=L )
+    );
     push @cmd, ( '-l', $args{lang} ) if $args{lang};
     # Only try to guess file type by contents in lang is passed in
     push @cmd, '-g' unless $args{lang};
