@@ -23,3 +23,8 @@ plugins:
 
 # Comment out for production
 show_errors: 1
+
+# Sets the expiration for posts
+# Options can be any combination of weeks, days, hours, minutes, seconds
+expiration:
+    weeks: 1
