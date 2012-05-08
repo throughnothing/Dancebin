@@ -17,7 +17,7 @@
           <div class="navbar-inner">
             <div class="container">
               <a class="brand" href="/">Dancebin</a>
-              <p class="navbar-text">Simple Pastbin with Dancer!</p>
+              <p class="navbar-text">Dancer + Pastebin</p>
             </div>
           </div>
         </div>
