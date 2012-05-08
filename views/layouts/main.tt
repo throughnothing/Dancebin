@@ -7,9 +7,12 @@
 
         <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
         <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/css/chosen.css" type="text/css"/>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/chosen.jquery.min.js"></script>
     </head>
     <body>
+        <a href="https://github.com/throughnothing/Dancebin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">

@@ -30,6 +30,11 @@ __PACKAGE__->table("posts");
   default_value: current_timestamp
   is_nullable: 1
 
+=head2 expiration
+
+  data_type: 'timestamp'
+  is_nullable: 1
+
 =head2 language
 
   data_type: 'text'
@@ -61,6 +66,8 @@ __PACKAGE__->add_columns(
     default_value => \"current_timestamp",
     is_nullable   => 1,
   },
+  "expiration",
+  { data_type => "timestamp", is_nullable => 1 },
   "language",
   { data_type => "text", is_nullable => 1 },
   "title",
@@ -73,8 +80,8 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07010 @ 2012-05-05 00:20:21
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:cZZ573oK06yO4N6qXgm92g
+# Created by DBIx::Class::Schema::Loader v0.07010 @ 2012-05-08 14:22:20
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:XwVbT5yQ7yN7YwWcy9e0xA
 
 # ABSTRACT: DBIx::Class Representation of posts table
 
