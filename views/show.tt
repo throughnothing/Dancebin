@@ -1,3 +1,23 @@
+<script type="text/javascript">
+$(function(){
+    var highlight_linenos = function(){
+        var hash = window.location.hash.match(/L-\d+/);
+        if(hash) {
+            var $span = $('[name="' + hash + '"]').next();
+            // Remove old highlights
+            $('div.line-hl').remove();
+            if($span.get(0).tagName == 'SPAN'){
+                // New Highlight
+                $('<div class="line-hl">').css({top: $span.position().top-1})
+                    .appendTo('body');
+            }
+        }
+    }
+    window.onhashchange = highlight_linenos;
+    highlight_linenos();
+});
+</script>
+
 <h1>[% post.title %]</h1>
 <div>[% post.ts %] (<a href='/[% post.id %]/raw'>raw</a>)</div>
 <div class="syntax">
