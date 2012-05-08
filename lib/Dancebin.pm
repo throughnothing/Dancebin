@@ -14,6 +14,18 @@ eval { schema->deploy };
 
 get '/' => sub { template 'index.tt' };
 
+sub _get_exp {
+    my ( $exp ) = @_;
+    $exp = $exp ? { split ':', $exp } : undef;
+
+    if( $exp && $exp->{never} ){
+        return undef; # Never Expire
+    }
+
+    return schema->storage->datetime_parser->format_datetime(
+        DateTime->now->add( %{ $exp || config->{expiration} } ));
+}
+
 post '/' => sub {
     my $p = params;
     return send_error("No Code!", 400) unless $p->{code};
@@ -30,6 +42,7 @@ post '/' => sub {
             title => $p->{title}
         ),
         language => $p->{lang},
+        expiration => _get_exp( $p->{expiration} ),
     })->id;
 };
 
@@ -40,7 +53,7 @@ any '/**' => sub {
 
     my $post = schema->resultset('Post')->search({
         id => $id,
-        ts => { '>=' => DateTime->now->subtract( weeks => 1 ) },
+        expiration => [ undef,  { '>' => DateTime->now } ],
     })->single;
     return redirect '/' unless $post;
 

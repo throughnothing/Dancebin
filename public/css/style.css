@@ -2,6 +2,8 @@ table.highlighttable { width: 100%; }
 table td.linenos { width: 50px; text-align: right; }
 div.syntax { margin: 10px 0 0; }
 
+div.chzn { padding: 1px 0 0 10px; }
+
 div.line-hl { background-color: #FFFFCC; height: 16px; width: 935px; position: absolute; left: 45px; opacity: 0.5; z-index: 500;}
 
 div.highlight pre span { z-index: 900; position: relative; }
