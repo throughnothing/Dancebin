@@ -4,12 +4,14 @@ $(function(){
         var hash = window.location.hash.match(/L-\d+/);
         if(hash) {
             var $span = $('[name="' + hash + '"]').next();
+            $('div.linenos pre a').removeClass('selected');
+            $('[href="#' + hash + '"]').addClass('selected');
             // Remove old highlights
             $('div.line-hl').remove();
             if($span.get(0).tagName == 'SPAN'){
                 // New Highlight
                 $('<div class="line-hl">').css({top: $span.position().top-1})
-                    .appendTo('body');
+                    .appendTo('div.highlight pre');
             }
         }
     }
