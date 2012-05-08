@@ -1,10 +1,98 @@
 ==================================================
-Changes from 2011-05-06 00:00:00 +0000 to present.
+Changes from 2011-05-09 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.001 at 2012-05-05 04:30:23 +0000
+version 0.001 at 2012-05-08 18:29:15 +0000
 ------------------------------------------
+
+  Change: c44295a4ffbe02ec2a1ede5ff292fb4cfe7145e5
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 14:29:06 +0000
+
+    update pod docs 
+
+  Change: f79159a76156e0a54d2c952969d263d1fef57a95
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 11:26:29 +0000
+
+    Merge pull request #2 from throughnothing/highlight-linenos
+
+    Highlight Line Numbers. 
+
+  Change: 8588ccbfd9a1213d5f5af7e299aae767a5d38edf
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 13:46:55 +0000
+
+    Highlight Line Numbers. 
+
+  Change: 5e5abb53668119dc399bea536eb939acd3ef3ed6
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 09:01:24 +0000
+
+    Merge pull request #1 from ironcamel/anchors
+
+    Adding links to each line via html anchors. 
+
+  Change: 7ed917e3fd480a2302936a5cca360f60ca669b49
+  Author: Naveed Massjouni <naveedm9@gmail.com>
+  Date : 2012-05-08 12:00:21 +0000
+
+    Updating the docs about setting up the database. 
+
+  Change: 9f2194a9ea43a19df60fd5130235ebc88b2d7651
+  Author: Naveed Massjouni <naveedm9@gmail.com>
+  Date : 2012-05-08 11:58:02 +0000
+
+    Adding a prefix for line anchors. 
+
+  Change: c6d9f7b45338d1e8308ecef0403ba607ed5de96e
+  Author: Naveed Massjouni <naveedm9@gmail.com>
+  Date : 2012-05-08 11:49:34 +0000
+
+    Doing anchors with the anchorlinenos option. 
+
+  Change: 79da10c436a88b1b8b38cf5a0cc25128b17f0c2d
+  Author: Naveed Massjouni <naveedm9@gmail.com>
+  Date : 2012-05-08 03:17:38 +0000
+
+    Adding links to each line via html anchors. 
+
+  Change: c55ce0252f45b00e9e3a4e066c3deec85d67d112
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-07 14:48:13 +0000
+
+    Shrink textarea on home page 
+
+  Change: 5f5eb54879d67bbe9b20291434a08ea10f05177c
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-07 14:45:45 +0000
+
+    Update id regex 
+
+  Change: 873ec14d9f09781f01a81597da66e04e96c20795
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-05 02:04:21 +0000
+
+    style updates 
+
+  Change: 0943550790819eb7822db062acc94c0234a59405
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-05 01:24:05 +0000
+
+    Only show if less than a week old 
+
+  Change: eae9462050b2387d89332c88158cb9447dbf0b13
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-05 00:39:15 +0000
+
+    Set Title 
+
+  Change: d8597e32a142a0d96a2a5650a04846cb3332c147
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-05 00:31:10 +0000
+
+    Use UUID's. 
 
   Change: ad5ec702436de1737a8569a11c7556db5acd34a2
   Author: William Wolf <throughnothing@gmail.com>
