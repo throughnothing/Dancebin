@@ -61,9 +61,10 @@ get '/:id/raw' => sub {
 
 A simple pastebin using L<Dancer>.
 
-To get started, create the sqlite database by running:
-
-    $ sqlite3 data/dancebin.db < data/schema.sql
+To get started, first update the dsn setting in config.yml to point to a
+database that your user has write access to.
+Don't worry about creating the database tables.
+Dancebin will do that for you the first time it runs.
 
 Then run the app with:
 
