@@ -20,18 +20,15 @@ post '/' => sub {
 
     ( my $id = Data::UUID->new->create_b64 ) =~ s/\W//g;
 
-    my $html = highlight(
-        code  => $p->{code},
-        lang  => $p->{lang},
-        title => $p->{title}
-    );
-    $html = _add_anchor_links($html);
-
     return redirect '/' . schema->resultset('Post')->create({
         id    => $id,
         title => $p->{title},
         code  => $p->{code},
-        html  => $html,
+        html  => highlight(
+            code  => $p->{code},
+            lang  => $p->{lang},
+            title => $p->{title}
+        ),
         language => $p->{lang},
     })->id;
 };
@@ -57,25 +54,6 @@ get '/:id/raw' => sub {
     content_type 'text/plain';
     return vars->{post}->code;
 };
-
-sub _add_anchor_links {
-    my ($html) = @_;
-    my @html_with_anchors;
-    for (split /\n/, $html) {
-        if (m{<div class="linenodiv"><pre>\s*1$} .. m{</pre>}) {
-            if (m{</pre>}) { # the last line is a special case
-                s{^(\d+)</pre>.*}
-                 {<a name="l$1"></a><a href="#l$1">$1</a></pre>};
-            } else {
-                s{(\d+)$}{<a name="l$1"></a><a href="#l$1">$1</a>};
-            }
-            push @html_with_anchors, $_;
-        }
-    }
-    my $html_with_anchors = join "\n", @html_with_anchors;
-    $html =~ s{^.+<div class="linenodiv"><pre>.+?</pre>}{$html_with_anchors}s;
-    return $html;
-}
 
 1;
 
