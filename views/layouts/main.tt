@@ -2,14 +2,12 @@
 <html lang="en">
     <head>
         <title>
-            [% IF post.title %]
-                [% post.title %] |
-            [% END %]
-            Dancebin!
+            [% post.title %] Dancebin!
         </title>
 
         <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
         <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     </head>
     <body>
         <div class="navbar">
