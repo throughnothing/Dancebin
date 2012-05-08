@@ -16,6 +16,7 @@ engines:
 plugins:
   DBIC:
     default:
+      schema_class: 'Dancebin::Schema'
       dsn: dbi:SQLite:dbname=data/dancebin.db
       options:
         sqlite_unicode: 1
