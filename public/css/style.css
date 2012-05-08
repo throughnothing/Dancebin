@@ -6,11 +6,11 @@ div.chzn { padding: 1px 0 0 10px; }
 
 div.syntax { margin: 10px 0 0; }
 div.highlight pre { position: relative; }
-div.line-hl { background-color: #FFFFCC; height: 16px; width: 935px; position: absolute; left: 0px; opacity: 0.8; z-index: 500;}
+div.line-hl { background-color: #FFFFCC; height: 16px; width: 100%; position: absolute; left: 0px; opacity: 0.8; z-index: 500;}
 
 div.highlight pre span { z-index: 900; position: relative; }
-.linenos a { z-index: 900 !important; position: relative !important; }
-.linenos a.selected { font-weight: bold; }
+.linenos a { z-index: 900 !important; position: relative !important; color: #aaa; }
+.linenos a.selected { font-weight: bold; color: #444;}
 
 .syntax td.code pre { width: 880px !important; }
 .syntax pre { overflow-x: auto; word-wrap: normal; white-space: pre; background: #f8f8f8 !important; margin: 0;}

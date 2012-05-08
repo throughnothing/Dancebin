@@ -4,7 +4,7 @@ $(function(){
         var hash = window.location.hash.match(/L-\d+/);
         if(hash) {
             var $span = $('[name="' + hash + '"]').next();
-            $('div.linenos pre a').removeClass('selected');
+            $('.linenos a').removeClass('selected');
             $('[href="#' + hash + '"]').addClass('selected');
             // Remove old highlights
             $('div.line-hl').remove();
