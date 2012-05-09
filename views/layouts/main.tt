@@ -24,5 +24,29 @@
         <div class="container">
             [% content %]
         </div>
+        <div id="footer">
+            <div class="container">
+                <ul>
+                    <li>
+                        Powered by
+                        <a href="http://perldancer.org">Dancer</a>
+                        1.3095
+                    </li>
+                    <li>
+                        Syntax highlighting accomplished with
+                        <a href="http://pygments.org/">Pygments</a>
+                    </li>
+                    <li>
+                        Site Theme/Layout built using
+                        <a href="http://twitter.com">Twitter</a>
+                        <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+                    </li>
+                    <li>
+                        <a href="http://copyheart.org/">♥</a>
+                        <a href="http://github.com/throughnothing/Dancebin">Dancebin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

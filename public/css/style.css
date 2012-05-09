@@ -2,6 +2,10 @@ table.highlighttable { width: 100%; }
 table td.linenos { width: 50px; text-align: right; }
 div.navbar div.container { width: 940px; }
 
+div#footer { color: #8f8f8f; background-color: #efefef; margin: 40px 0 0 0; padding: 40px 0 50px; box-shadow: inset 0 0 40px #bbb; -moz-box-shadow: inset 0px 0px 40px #bbb; min-height: 100px;}
+div#footer ul { list-style-type: none }
+div#footer ul li a { color: #6f6f6f; }
+
 div.chzn { padding: 1px 0 0 10px; }
 
 div.syntax { margin: 10px 0 0; }
