@@ -37,9 +37,10 @@
                         <a href="http://pygments.org/">Pygments</a>
                     </li>
                     <li>
-                        Site Theme/Layout built using
-                        <a href="http://twitter.com">Twitter</a>
-                        <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+                        Theme/Layout built using
+                        <a href="http://twitter.github.com/bootstrap">
+                            Twitter Bootstrap
+                        </a>
                     </li>
                     <li>
                         <a href="http://copyheart.org/">♥</a>
