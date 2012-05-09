@@ -6,11 +6,11 @@
     </div>
     <div class="pull-left chzn">
         <select class="expiration" name="expiration">
-            <option value="days:1">1 day</option>
-            <option selected value="weeks:1">1 week</option>
-            <option value="months:1">1 month</option>
-            <option value="years:1">1 year</option>
-            <option value="never:1">Never</option>
+            <option value="days:1">Expires: 1 day</option>
+            <option selected value="weeks:1">Expires: 1 week</option>
+            <option value="months:1">Expires: 1 month</option>
+            <option value="years:1">Expires: 1 year</option>
+            <option value="never:1">Expires: Never</option>
         </select>
     </div>
 
