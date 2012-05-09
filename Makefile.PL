@@ -32,6 +32,7 @@ my %WriteMakefileArgs = (
     "Dancer::Plugin::DBIC" => 0,
     "Data::UUID" => 0,
     "DateTime" => 0,
+    "DateTime::Format::SQLite" => 0,
     "Exporter" => 0,
     "IPC::Run" => 0,
     "base" => 0,

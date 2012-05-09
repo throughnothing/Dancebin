@@ -19,6 +19,11 @@ Then run the app with:
 
     $ ./bin/app.pl
 
+In a production environment you probably want to run it with something like
+[Starman](http://search.cpan.org/perldoc?Starman):
+
+    $ starman -D ./bin/app.pl
+
 # REQUIREMENTS
 
 Dancebin requires [pygments](http://pygments.org/docs/) to be installed

@@ -1,10 +1,96 @@
 ==================================================
-Changes from 2011-05-09 00:00:00 +0000 to present.
+Changes from 2011-05-10 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.001 at 2012-05-08 18:29:15 +0000
+version 0.001 at 2012-05-09 03:35:14 +0000
 ------------------------------------------
+
+  Change: f7ae475ec30d92c9d5095749e2e08098dc6a0813
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 23:31:48 +0000
+
+    Align expiration dropdown 
+
+  Change: 57ebe0c391a41b675b5b4e5219d6690055cbec14
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 23:29:33 +0000
+
+    Clarify expiration field 
+
+  Change: d7be98bc5a2e2e530de509af28b878dc4cc69f10
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 23:18:41 +0000
+
+    Footer Update 
+
+  Change: 0cb5bf8ed34af16f67bb73b0c724d9ca9d8e8a68
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 23:11:30 +0000
+
+    Add Footer 
+
+  Change: 7b767d37c7a4a7ca19e71ee289997ab048ae9f9d
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 22:39:37 +0000
+
+    Fix CSS issue on horizontal scroll 
+
+  Change: 46d1f49735becbccf7a633a31762bd608f3db901
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 22:39:23 +0000
+
+    add DataTime::Format::SQLite dependency 
+
+  Change: 8863bf8a0bc1cbea153b0c3b25956f2d724f9478
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 16:35:17 +0000
+
+    update tagline 
+
+  Change: e26acfb54a18abc381a73618d4ad514b9300aff8
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 16:34:10 +0000
+
+    Lineno link style updates and js fix. 
+
+  Change: a5cb5888f579d1e5f4b9e5d62e1ebdf49f98ba65
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 16:30:39 +0000
+
+    Add tagline to header. 
+
+  Change: d031695baacfc00ca4723a0c1ef415bf784dc248
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 16:30:33 +0000
+
+    Fix issue with line number highlighting. 
+
+  Change: 81ae8d8757fdfc4dedb54480c77d9a31c5b27ef7
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 13:08:56 +0000
+
+    Merge pull request #3 from throughnothing/expiration
+
+    Add Expiration. 
+
+  Change: ba0131da6e13a7b0aa48ea9c70e03de6388b9471
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 16:07:24 +0000
+
+    Make Forkme Red 
+
+  Change: 9e81188ed7cc123efba8103bf7bfaa0920d2268e
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 16:07:20 +0000
+
+    Add Expiration. 
+
+  Change: f5bf02d2e803e80bcd6abab5ab0ecc66cad5b52f
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-08 14:29:42 +0000
+
+    Update README and CHANGES 
 
   Change: c44295a4ffbe02ec2a1ede5ff292fb4cfe7145e5
   Author: William Wolf <throughnothing@gmail.com>
