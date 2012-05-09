@@ -14,6 +14,7 @@ div.highlight pre span { z-index: 900; position: relative; }
 
 .syntax td.code pre { width: 880px !important; }
 .syntax pre { overflow-x: auto; word-wrap: normal; white-space: pre; background: #f8f8f8 !important; margin: 0;}
+.linenos, .linenos pre { vertical-align: top; }
 /* Pygments Styles */
 /* generated from: pygmentize -f html -S default -a .syntax */
 .syntax .hll { background-color: #ffffcc }
