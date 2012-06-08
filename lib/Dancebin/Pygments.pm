@@ -1,5 +1,6 @@
 package Dancebin::Pygments;
 use Dancer ':syntax';
+use Encode qw( decode_utf8 );
 use Exporter;
 use IPC::Run qw( run );
 
@@ -15,8 +16,13 @@ sub highlight {
     return unless $args{code};
 
     my @cmd = (
-        $pygment,
-        qw( -f html -O linenos=1 -O anchorlinenos -O lineanchors=L )
+        $pygment, qw(
+            -f html
+            -O linenos=1
+            -O anchorlinenos
+            -O lineanchors=L
+            -O encoding=utf-8
+        )
     );
     push @cmd, ( '-l', $args{lang} ) if $args{lang};
     # Only try to guess file type by contents in lang is passed in
@@ -24,7 +30,7 @@ sub highlight {
 
     my ($in, $out) = ( $args{code} );
     run \@cmd, \$in, \$out or return;
-    return $out;
+    return decode_utf8( $out );
 }
 
 1;
