@@ -20,18 +20,27 @@ $(function(){
 });
 </script>
 
-<h1>[% post.title %]</h1>
-<div class="pull-left posted">
-    <strong>Posted</strong>: [% post.ts %]
+<div class="row">
+    <h1 class="span12">[% post.title %]</h1>
 </div>
-<div class="pull-left expires">
-    <strong>Expires</strong>: [% post.expiration || 'Never' %]
+
+<div class="row">
 </div>
-<div class="pull-left actions">
-    (<a href='/[% post.id %]/raw'>raw</a>,
-    <a href='/[% post.id %]/copy'>copy</a>)
+
+<div class="row">
+    <div class="span3">
+        <strong>Posted</strong>: [% post.ts %]
+    </div>
+    <div class="span3">
+        <strong>Expires</strong>: [% post.expiration || 'Never' %]
+    </div>
+    <div class="offset10 actions">
+        <a href='/[% post.id %]/raw' class="btn btn-mini btn-primary">raw</a>
+        <a href='/[% post.id %]/copy' class="btn btn-mini btn-primary">copy</a>
+    </div>
 </div>
-<div class="syntax clearfix">
+
+<div class="syntax">
     [% IF post.html %]
         [% post.html %]
     [% ELSE %]

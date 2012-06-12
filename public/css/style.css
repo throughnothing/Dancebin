@@ -8,7 +8,7 @@ div.navbar div.container { width: 940px; }
 select.expiration { width: 152px; }
 select.language   { width: 210px; }
 
-div.actions, div.expires { margin: 0 0 0 10px; }
+div.actions { padding: 0 0 0 62px; }
 
 div#footer { color: #8f8f8f; background-color: #efefef; padding: 40px 0 30px; height: 100px; border-top: 2px solid #dddddd; position: relative; position: absolute; bottom: 0; width: 100%;}
 div#footer ul { list-style-type: none }
