@@ -31,7 +31,7 @@ $(function(){
     (<a href='/[% post.id %]/raw'>raw</a>,
     <a href='/[% post.id %]/copy'>copy</a>)
 </div>
-<div class="syntax">
+<div class="syntax clearfix">
     [% IF post.html %]
         [% post.html %]
     [% ELSE %]
