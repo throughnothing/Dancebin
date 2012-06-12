@@ -12,41 +12,42 @@
         <script type="text/javascript" src="/js/chosen.jquery.min.js"></script>
     </head>
     <body>
-<a href="https://github.com/throughnothing/Dancebin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <a class="brand" href="/">Dancebin</a>
-              <p class="navbar-text">Dancer + Pastebin</p>
+        <div class="global-container">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="brand" href="/">Dancebin</a>
+                  <p class="navbar-text">Dancer + Pastebin</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-            [% content %]
-        </div>
-        <div id="footer">
-            <div class="container">
-                <ul>
-                    <li>
-                        Powered by
-                        <a href="http://perldancer.org">Dancer</a>
-                        1.3095
-                    </li>
-                    <li>
-                        Syntax highlighting accomplished with
-                        <a href="http://pygments.org/">Pygments</a>
-                    </li>
-                    <li>
-                        Theme/Layout built using
-                        <a href="http://twitter.github.com/bootstrap">
-                            Twitter Bootstrap
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://copyheart.org/">♥</a>
-                        <a href="http://github.com/throughnothing/Dancebin">Dancebin</a>
-                    </li>
-                </ul>
+            <div class="container body">
+                [% content %]
+            </div>
+            <div id="footer">
+                <div class="container">
+                    <ul>
+                        <li>
+                            Powered by
+                            <a href="http://perldancer.org">Dancer</a>
+                            1.3095
+                        </li>
+                        <li>
+                            Syntax highlighting accomplished with
+                            <a href="http://pygments.org/">Pygments</a>
+                        </li>
+                        <li>
+                            Theme/Layout built using
+                            <a href="http://twitter.github.com/bootstrap">
+                                Twitter Bootstrap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://copyheart.org/">♥</a>
+                            <a href="http://github.com/throughnothing/Dancebin">Dancebin</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>

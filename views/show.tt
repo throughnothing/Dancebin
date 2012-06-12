@@ -27,7 +27,7 @@ $(function(){
 <div class="pull-left expires">
     <strong>Expires</strong>: [% post.expiration || 'Never' %]
 </div>
-<div class="expires pull-left">
+<div class="pull-left actions">
     (<a href='/[% post.id %]/raw'>raw</a>,
     <a href='/[% post.id %]/copy'>copy</a>)
 </div>
