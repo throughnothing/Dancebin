@@ -61,6 +61,8 @@ any '/**' => sub {
     pass;
 };
 
+get '/:id/copy' => sub { template 'index.tt', { post => vars->{post} } };
+
 get '/:id' => sub { template 'show.tt', { post => vars->{post} } };
 
 get '/:id/raw' => sub {

@@ -21,12 +21,15 @@ $(function(){
 </script>
 
 <h1>[% post.title %]</h1>
-<div>
+<div class="pull-left posted">
     <strong>Posted</strong>: [% post.ts %]
-    (<a href='/[% post.id %]/raw'>raw</a>)
 </div>
-<div>
+<div class="pull-left expires">
     <strong>Expires</strong>: [% post.expiration || 'Never' %]
+</div>
+<div class="expires pull-left">
+    (<a href='/[% post.id %]/raw'>raw</a>,
+    <a href='/[% post.id %]/copy'>copy</a>)
 </div>
 <div class="syntax">
     [% IF post.html %]

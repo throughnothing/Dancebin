@@ -2,7 +2,7 @@
 <form action="/" method="POST">
     <div class="pull-left">
     <input type="text" class="span5" name="title"
-        placeholder="Title (optional)"/>
+        placeholder="Title (optional)" value="[% post.title %]"/>
     </div>
     <div class="pull-left chzn">
         <select class="expiration" name="expiration">
@@ -15,12 +15,19 @@
     </div>
     <div class="pull-left chzn">
         <select class="language" name="lang">
-            <option value="" selected >Language: Auto</option>
-            <option value="text">Text</option>
+            <option value="" [% 'selected' UNLESS post.language %] >
+                Language: Auto
+            </option>
+            <option value="text" [% 'selected' IF post.language == 'text' %]>
+                Text
+            </option>
             [% FOR group = settings.languages %]
             <optgroup label="[% group.keys.0 %]">
                 [% FOR lang = group.values.0 %]
-                <option value="[% (lang.values.0 || lang.keys.0) | lower  %]">
+                [% val = (lang.values.0 || lang.keys.0) | lower %]
+                <option
+                    value="[% val | lower %]"
+                    [% 'selected' IF post.language == "${val}" %]>
                     [% lang.keys.0 %]
                 </option>
                 [% END %]
@@ -31,7 +38,7 @@
 
     <div>
         <textarea name="code" class="input-xlarge span10"
-            rows="15" placeholder="Put code here..."></textarea>
+            rows="15" placeholder="Put code here...">[% post.code %]</textarea>
     </div>
     <button type="submit" class="btn btn-large">Dance!</button>
 </form>
