@@ -1,4 +1,4 @@
-<script> $(function(){ $('select.expiration').chosen(); }); </script>
+<script> $(function(){ $('select').chosen(); }); </script>
 <form action="/" method="POST">
     <div class="pull-left">
     <input type="text" class="span5" name="title"
@@ -13,9 +13,24 @@
             <option value="never:1">Expires: Never</option>
         </select>
     </div>
+    <div class="pull-left chzn">
+        <select class="language" name="lang">
+            <option value="" selected >Language: Auto</option>
+            <option value="text">Text</option>
+            [% FOR group = settings.languages %]
+            <optgroup label="[% group.keys.0 %]">
+                [% FOR lang = group.values.0 %]
+                <option value="[% (lang.values.0 || lang.keys.0) | lower  %]">
+                    [% lang.keys.0 %]
+                </option>
+                [% END %]
+            </optgroup>
+            [% END %]
+        </select>
+    </div>
 
     <div>
-        <textarea name="code" class="input-xlarge span8"
+        <textarea name="code" class="input-xlarge span10"
             rows="15" placeholder="Put code here..."></textarea>
     </div>
     <button type="submit" class="btn btn-large">Dance!</button>

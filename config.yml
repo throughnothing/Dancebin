@@ -28,3 +28,130 @@ show_errors: 1
 # Options can be any combination of weeks, days, hours, minutes, seconds
 expiration:
     weeks: 1
+
+
+# Languages supported by Pygments
+languages:
+    - Pragramming Languages:
+        - ActionScript:
+        - Ada:
+        - ANTLR:
+        - AppleScript:
+        - Assembly: nasm
+        - Asymptote:
+        - Awk:
+        - Befunge:
+        - Boo:
+        - BrainFuck:
+        - C:
+        - C++:
+        - C#:
+        - Clojure:
+        - CoffeeScript:
+        - ColdFusion:
+        - Common Lisp:
+        - Coq:
+        - Cython:
+        - D:
+        - Dart:
+        - Delphi:
+        - Dylan:
+        - Erlang:
+        - Factor:
+        - Fancy:
+        - Fortran:
+        - F#:
+        - Gherkin:
+        - Cucumber:
+        - GL shaders:
+        - Groovy:
+        - Haskell:
+        - Io:
+        - Java:
+        - JavaScript:
+        - LLVM:
+        - Logtalk:
+        - Lua:
+        - Matlab:
+        - MiniD:
+        - Modelica:
+        - Modula-2:
+        - MuPad:
+        - Nemerle:
+        - Nimrod:
+        - Objective-C:
+        - Objective-J:
+        - Octave:
+        - OCaml:
+        - PHP:
+        - Perl:
+        - PovRay:
+        - PostScript:
+        - PowerShell:
+        - Prolog:
+        - Python:
+        - Rebol:
+        - Redcode:
+        - Ruby:
+        - S:
+        - S-Plus:
+        - R:
+        - Scala:
+        - Scheme:
+        - Scilab:
+        - Smalltalk:
+        - SNOBOL:
+        - Tcl:
+        - Vala:
+        - Verilog:
+        - VHDL:
+        - Visual Basic.NET: vbnet
+        - XQuery:
+    - Template Languages:
+        - Cheetah:
+        - Django:
+        - Jinja:
+        - ERB:
+        - Genshi:
+        - JSP:
+        - Mason:
+        - Mako:
+        - Smarty:
+        - Tea:
+    - Other Markup:
+        - ApacheConf:
+        - Bash:
+        - BBCode:
+        - CMake:
+        - CSS:
+        - Debian Control Files: control
+        - Diff:
+        - DTD:
+        - Gettext catalogs: pot
+        - Gnuplot:
+        - Groff:
+        - HTML:
+        - HTTP sessions: http
+        - INI-style config files: ini
+        - IRC logs (irssi style): irc
+        - Lighttpd:
+        - Makefile:
+        - MoinMoin/Trac Wiki markup: moin
+        - MySQL:
+        - Nginx:
+        - POV-Ray scenes: pov
+        - Ragel:
+        - Redcode:
+        - ReST:
+        - SQL:
+        - PostgreSQL: psql
+        - MySQL:
+        - SQLite:
+        - Squid configuration: squid
+        - TeX:
+        - tcsh:
+        - Vim Script: vim
+        - Windows batch files: bat
+        - XML:
+        - XSLT:
+        - YAML:
