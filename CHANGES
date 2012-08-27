@@ -1,10 +1,71 @@
 ==================================================
-Changes from 2011-05-10 00:00:00 +0000 to present.
+Changes from 2011-08-28 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.001 at 2012-05-09 03:35:14 +0000
+version 0.001 at 2012-08-27 18:33:26 +0000
 ------------------------------------------
+
+  Change: 7413cf9724b8653ed4021fdeb5951c5955fccfa1
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-12 17:13:54 +0000
+
+    Update show page formatting with buttons. 
+
+  Change: 5a4f697bc7fbf6612bb59ef15fa25fd23f749580
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-12 13:27:43 +0000
+
+    Merge pull request #9 from throughnothing/footer-fix
+
+    Make footer stay at the bottom. 
+
+  Change: 7f81f23b390279c73ee7b246d79ac07e7933eb1e
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-12 16:27:06 +0000
+
+    Make footer stay at the bottom. 
+
+  Change: 4fe9c14f81fee8517c36077d88df8ffaabf202b5
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-12 16:12:05 +0000
+
+    Fix show.tt in firefox 
+
+  Change: a8238a15ea0ce2873098f8f354618415ca4c592a
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-12 16:05:18 +0000
+
+    Add ability to copy a post. 
+
+  Change: 373e07128cb5c9e3f6477b05059bbc6f49cb7065
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-12 15:09:29 +0000
+
+    Add Languages Drop Down. 
+
+  Change: 4a14845b960a0e98698980fc56a59434100c6c7a
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-07 20:06:54 +0000
+
+    Merge pull request #6 from throughnothing/utf-8
+
+    Set pygments to utf-8 encoding. 
+
+  Change: 4097e08309c906961de68b299fdd77251af906e1
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-06-07 23:00:31 +0000
+
+    Set pygments to utf-8 encoding.
+
+    This will handle UTF-8 properly for syntax highlighting (being run
+    through pigments) and fixes #4. 
+
+  Change: c5bb1a64e050ac1462f7b254a1938f22d0913094
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-05-09 00:51:29 +0000
+
+    Updates 
 
   Change: f7ae475ec30d92c9d5095749e2e08098dc6a0813
   Author: William Wolf <throughnothing@gmail.com>
