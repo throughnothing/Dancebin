@@ -37,6 +37,7 @@ my %WriteMakefileArgs = (
     "Exporter" => 0,
     "IPC::Run" => 0,
     "SQL::Translator" => "0.11012",
+    "Template" => 0,
     "base" => 0,
     "strict" => 0,
     "warnings" => 0
