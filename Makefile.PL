@@ -36,12 +36,12 @@ my %WriteMakefileArgs = (
     "Encode" => 0,
     "Exporter" => 0,
     "IPC::Run" => 0,
-    "SQl::Translator" => "0.11012",
+    "SQL::Translator" => "0.11012",
     "base" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
