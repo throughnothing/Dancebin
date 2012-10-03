@@ -23,7 +23,7 @@ sub _get_exp {
     }
 
     return schema->storage->datetime_parser->format_datetime(
-        DateTime->now->add( %{ $exp || config->{expiration} } ));
+        DateTime->now(time_zone => config->{time_zone})->add( %{ $exp || config->{expiration} } ));
 }
 
 post '/' => sub {
@@ -53,8 +53,9 @@ any '/**' => sub {
 
     my $post = schema->resultset('Post')->search({
         id => $id,
-        expiration => [ undef,  { '>' => DateTime->now } ],
+        expiration => [ undef,  { '>' => schema->storage->datetime_parser->format_datetime( DateTime->now(time_zone => config->{time_zone}) ) } ],
     })->single;
+
     return redirect '/' unless $post;
 
     var post => $post;

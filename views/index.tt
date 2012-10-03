@@ -6,6 +6,8 @@
     </div>
     <div class="pull-left chzn">
         <select class="expiration" name="expiration">
+            <option value="hours:1">Expires: 1 hour</option>
+            <option value="hours:6">Expires: 6 hours</option>
             <option value="days:1">Expires: 1 day</option>
             <option selected value="weeks:1">Expires: 1 week</option>
             <option value="months:1">Expires: 1 month</option>

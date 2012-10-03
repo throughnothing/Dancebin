@@ -86,4 +86,11 @@ __PACKAGE__->set_primary_key("id");
 # ABSTRACT: DBIx::Class Representation of posts table
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
+use Dancer ':script';
+__PACKAGE__->load_components(qw/InflateColumn::DateTime/);
+__PACKAGE__->add_columns(
+    ts => { data_type => 'datetime', timezone => config->{time_zone}, locale => config->{locale} },
+    expiration => { data_type => 'datetime', timezone => config->{time_zone}, locale => config->{locale}, formatter => 'DateTime::Format::MySQL' }
+);
+
 1;

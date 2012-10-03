@@ -29,10 +29,10 @@ $(function(){
 
 <div class="row">
     <div class="span3">
-        <strong>Posted</strong>: [% post.ts %]
+        <strong>Posted</strong>: [% post.ts.ymd _ " " _ post.ts.hms %]
     </div>
     <div class="span3">
-        <strong>Expires</strong>: [% post.expiration || 'Never' %]
+        <strong>Expires</strong>: [% post.expiration.ymd _ " " _ post.expiration.hms || 'Never' %]
     </div>
     <div class="offset10 actions">
         <a href='/[% post.id %]/raw' class="btn btn-mini btn-primary">raw</a>
