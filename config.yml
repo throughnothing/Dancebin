@@ -1,6 +1,8 @@
 appname: "Dancebin"
 layout: "main"
 charset: "UTF-8"
+time_zone: "UTC"
+locale: "en_US"
 
 logger: "console"
 log: "debug"
