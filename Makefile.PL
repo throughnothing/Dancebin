@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Simple. Pastebin.",
-  "AUTHOR" => "William Wolf <throughnothing\@gmail.com>",
+  "AUTHOR" => "William Wolf <throughnothing\@gmail.com>, Menno Blom <blom\@cpan.org>",
   "BUILD_REQUIRES" => {
     "File::Find" => 0,
     "File::Temp" => 0,
@@ -27,6 +27,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Dancebin",
   "PREREQ_PM" => {
     "DBIx::Class::Core" => 0,
+    "DBIx::Class::InflateColumn::DateTime" => 0,
     "DBIx::Class::Schema" => 0,
     "Dancer" => 0,
     "Dancer::Plugin::DBIC" => 0,

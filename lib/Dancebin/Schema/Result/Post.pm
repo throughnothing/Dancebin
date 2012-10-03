@@ -89,8 +89,15 @@ __PACKAGE__->set_primary_key("id");
 use Dancer ':script';
 __PACKAGE__->load_components(qw/InflateColumn::DateTime/);
 __PACKAGE__->add_columns(
-    ts => { data_type => 'datetime', timezone => config->{time_zone}, locale => config->{locale} },
-    expiration => { data_type => 'datetime', timezone => config->{time_zone}, locale => config->{locale}, formatter => 'DateTime::Format::MySQL' }
+    '+ts' => {
+        timezone => config->{time_zone},
+        locale => config->{locale}
+    },
+    '+expiration' => {
+        timezone => config->{time_zone},
+        locale => config->{locale},
+        formatter => 'DateTime::Format::MySQL'
+    }
 );
 
 1;

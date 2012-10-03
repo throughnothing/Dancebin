@@ -33,9 +33,10 @@ for syntax highlighting.  You can probably install this on your system with:
 
 or something similar.
 
-# AUTHOR
+# AUTHORS
 
-William Wolf <throughnothing@gmail.com>
+- William Wolf <throughnothing@gmail.com>
+- Menno Blom <blom@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
