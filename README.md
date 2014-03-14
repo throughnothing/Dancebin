@@ -8,7 +8,7 @@ version 0.002
 
 # SYNOPSIS
 
-A simple pastebin using [Dancer](http://search.cpan.org/perldoc?Dancer).
+A simple pastebin using [Dancer](https://metacpan.org/pod/Dancer).
 
 To get started, first update the dsn setting in config.yml to point to a
 database that your user has write access to.
@@ -20,7 +20,7 @@ Then run the app with:
     $ ./bin/app.pl
 
 In a production environment you probably want to run it with something like
-[Starman](http://search.cpan.org/perldoc?Starman):
+[Starman](https://metacpan.org/pod/Starman):
 
     $ starman -D ./bin/app.pl
 
